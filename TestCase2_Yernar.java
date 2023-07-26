@@ -49,7 +49,8 @@ public class TestCase2_Yernar {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.textToBe(By.xpath("//h1[text()='Transfer Complete']"), "Transfer Complete"));
         Assert.assertEquals("Test Failed", "Bill Payment Complete", check.getText());
-        Assert.assertTrue("Test Failed",check.getText().equals("Transfer Complete"));
+        Assert.assertTrue("Test Failed", check.getText().equals("Transfer Complete"));
+        System.out.println("123");
 
     }
 }
