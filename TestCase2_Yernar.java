@@ -50,7 +50,7 @@ public class TestCase2_Yernar {
         wait.until(ExpectedConditions.textToBe(By.xpath("//h1[text()='Transfer Complete']"), "Transfer Complete"));
         Assert.assertEquals("Test Failed", "Bill Payment Complete", check.getText());
         Assert.assertTrue("Test Failed", check.getText().equals("Transfer Complete"));
-        System.out.println("123");
+        System.out.println("1234");
 
     }
 }
